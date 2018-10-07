@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/master.css" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,11 +17,45 @@
     <title>Blogpost</title>
     <link rel="shortcut icon" href="images/k.ico"/>
     <style type="text/css">
-
+      .navbar-collapse{
+       justify-content: flex-end;
+      }
+      .nav-link{
+        margin-right: 1em !important;
+      }
+      #nav-text:hover{
+        color: red;
+        transition: 1s ease;
+      }
+      @media only screen and (max-width: 768px) {
+        .navbar .navbar-collapse {
+            border-color: black;
+            background-color: black;
+         }
+     }
+     #content{
+       padding:100px;
+     }
      #bimg{
-       width: 400px;
+       width: 350px;
        padding: 20px;
      }
+     #bimg-l{
+       width: 450px;
+       padding: 20px;
+     }
+     .fas{
+       font-size: 2em;
+       color: black;
+     }
+      #cont{
+        padding-top: 0px;
+        margin-top: 50px;
+        background-color:#1e1c1c;
+      }
+      #contin{
+        width: 300px;
+      }
     </style>
   </head>
   <body>
@@ -75,20 +108,28 @@
 
       <div class="container" id="content">
 
-        <h2 class="text-center">Blog Title</h2>
-        <h6 class="text-center">Blog Category</h6>
-        <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo con
-          sequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat,</p>
-          <img src="images/Blog/b1-cover.PNG" alt="..."  id="bimg" style="float:left;">
-        <p>vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
-           mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem
-           consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.</p>
-           <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo con
-             sequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat,</p>
-             <img src="images/Blog/b1-cover.PNG" alt="..."  id="bimg" style="float:right;">
-           <p>vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
-              mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem
-              consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.</p>
+        <h2 class="text-center">Rolling Out the Tires !</h2>
+        <h6 class="text-center">Aerodynamics | Suspension</h6>
+        <p>This topic is completely about the love story between the tyres and the road.Well not one of the same cliched love stories but a story which includes maths and mechanics.</p>
+        <p>When you are riding a car,you must have experienced some forces acting on you while the car accelerates,brakes or moves around a turn.The tires provide the necessary longitudinal and lateral forces in order to help the car move around a corner and also during acceleration and braking.These forces are produced by the deformation of the tire during the different movements of the car.</p>
+           <img src="images/Blog/b2/1.png" alt="..."  width="80%" id="bimg" style="float:left;"><br>
+        <p>When the car moves straight ahead,the rolling tire moves straight along the wheel plane.But when the car maneuvers around a corner the tire tends to “slip” on the road, i.e. the motion of the tire will no more be in the same direction as the motion of the wheel plane.The angle between the direction of motion and the direction of wheel travel is called slip angle (α).This slip produces a lateral force Fy at the tire-ground interface. Now this particular Fy acts a little behind the centre of the wheel producing a moment Mz which aligns the wheel along the direction of rotation.</p>
+           <p>This curve gives an idea about how the slip angle changes with lateral force for three different types of tires,Now, for small values of α ,the relationship is nearly linear,and the slope of this curve is called the cornering stiffness (Cα).</p>
+             <img src="images/Blog/b2/2.jpg" alt="..."  id="bimg" style="float:right;">
+             <p>The magic formula is incorporated in a computer program (preferably MATLAB) in order to check the fitting for different tires and conclude the tire behaviour at a different environment.</p>
+             <img src="images/Blog/b2/3.gif" alt="..."  id="bimg" style="float:left;">
+           <p>To add to the list is the induced drag which in wings is caused by the inclination of the lift vector by velocity induction by tip vortices and in tyres is because of the oblique incidence of the side force or the lateral force vector to the velocity vector.</p>
+            <p>The boundary layer over a wing can be thought of as analogous to the tire print where all the mystery remains concealed. The boundary layer is very thin, however it encloses within it very interesting concepts like the occirrence of Tollmein-Schilichting waves at the onset of turbulence during transition, the division of different layers within a turbulent boundary layer dictated by the values of viscous stresses and reynolds stresses , the law of wall critical in modelling of near wall flows,  quassi periodic sequence of events resulting in hair-pin voritices and their susceptibility to Helmholtz’s instability within the viscous sub-layer and many such fascinating concepts. The tyre print on the other hand is in no way less sophisticated and involves hysterisis of compression and expansion of tyre tread to produce the asymmetrical lateral force distribution partly responsible for the mysterious aligning torque along with the mechanical trail. This hysterisis is also responsible for the asymmtric distribution of normal force in the tyre print. A less noticeable phenomenon is standing wave in a rolling tyre at high speeds caused by a delay in the tread emerging from the tire print  snapping back to its orbit around the wheel and in case of excessive speed it may lead to a shock wave analogous to aerodynamics leading to disintegration of the tyre.
+            </p>
+
+            <p>
+              The general form of the magic formula is :<br>
+              R(k)=d. sin [ c.arctan { b (1-e) k+e.arctan (bk) } ]<br>
+              Where b,c,d,e represents fitting constants and R is the required force or moment depending on slip parameter k.</p>
+
+
+              <p style="float:left">Fit done in MATLAB.Red dots indicate observed values and black spline indicate the magic formula fit.<br>Parcejka’s tire models are used extensively in Vehicular dynamics in formula racing competitions and also used in gaming simulations.</p>
+        <img src="images/Blog/b2/4.png" alt="..."  id="bimg-l" style="float:left;"><img src="images/Blog/b2/5.png" alt="..."  id="bimg-l" style="float:">
         <h6 class="text-right">Author Name</h6>
           <div class="text-center" id="navigate" style="padding:50px">
             <a href="#"><i class="fas fa-arrow-left"></i></a>&emsp;

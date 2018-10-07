@@ -1,0 +1,35 @@
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+#nav-text:hover{
+  color: red;
+  transition: 1s ease;
+}
+.navbar-toggler {
+background-color: red !important
+}
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-collapse {
+      border-color: black;
+      background-color: black;
+   }
+}
+#content{
+ padding:100px;
+}
+
+.fas{
+ font-size: 2em;
+ color: black;
+}
+#cont{
+  padding-top: 0px;
+  margin-top: 50px;
+  background-color:#1e1c1c;
+}
+#contin{
+  width: 300px;
+}

@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"-->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
@@ -16,16 +17,7 @@
     <title>Blog</title>
     <link rel="shortcut icon" href="images/k.ico"/>
     <style type="text/css">
-      .navbar-collapse{
-       justify-content: flex-end;
-      }
-      .nav-link{
-        margin-right: 1em !important;
-      }
-      #nav-text:hover{
-        color: red;
-        transition: 1s ease;
-      }
+
       #post{
         padding: 20px;
       }
@@ -49,18 +41,7 @@
         color: white;
       }
       #cont{
-        padding-top: 0px;
-        margin-top: 0px;
-        background-color:#1e1c1c;
-      }
-      @media only screen and (max-width: 768px) {
-        .navbar .navbar-collapse {
-            border-color: black;
-            background-color: black;
-         }
-     }
-      #contin{
-        width: 300px;
+        margin-top: 0;
       }
     </style>
   </head>
@@ -139,13 +120,12 @@ cars.</p>
                  <div class="text-inner d-flex align-items-center">
                    <div class="content">
                      <header>
-                       <div class="category">Drivetrain</div><a href="https://engineerinthemechingblog.wordpress.com/2017/08/13/the-gearing-lingo/" target= "_blank">
+                       <a href="https://engineerinthemechingblog.wordpress.com/2017/08/13/the-gearing-lingo/" target= "_blank">
                          <h2 class>The Gearing Lingo</h2></a>
                      </header>
                      <p>Exited the corner, encountered a clear road and tossed into the higher gear because you wanted to speed up. But do you have an idea what actually happens when you shift up or down through the gears?
                        Plenty of fellows out there know how to handle the gear stick of their cars and when to shift through the gears but alas, understanding the interesting mechanism going on behind the scenes isn’t their cup of cake...........</p>
-                     <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap"><br>
-                         <div class="title"><span>Writer</span></div></a> &nbsp;|&nbsp; <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                     <footer class="post-footer d-flex align-items-center"><div class="date"><i class="icon-clock"></i> 2 months ago</div>
                      </footer>
                    </div>
                  </div>
@@ -159,12 +139,11 @@ cars.</p>
                  <div class=>
                    <div class="content">
                      <header>
-                       <div class="category">Drivetrain<a href="blog-p2.html">
+                       <div class="category"><a href="https://engineerinthemechingblog.wordpress.com/2017/08/24/a-tale-of-differentials/">
                          <h2 class>A Tale Of Differentials</h2></a>
                      </header>
                      <p>So it was a pleasant weather outside with a cool breeze blowing and you decided to go out for a long drive in your car. It was not minutes after you started driving, came out of a corner and one of the back tyres of your car came under a large slippery, muddy patch and argh!!! It started slipping in its place and your car came to a stop. Now you don’t have an idea what the hell went wrong with your car and how to come out of it and continue your comfortable ride!! That’s because you don’t have the right differential in your car. Wait! What’s a differential?? Don’t worry, continue reading…..</p>
-                     <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap"><br>
-                         <div class="title"><span>Writer</span></div></a> &nbsp;|&nbsp; <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                     <footer class="post-footer d-flex align-items-center">  <div class="date"><i class="icon-clock"></i> 2 months ago</div>
                      </footer>
                    </div>
                  </div>
@@ -176,15 +155,15 @@ cars.</p>
                  <div class="text-inner d-flex align-items-center">
                    <div class="content">
                      <header>
-                       <div class="category">Powertrain </div>
-                         <a href="blog-p3.html"><h2 class>Radiators</h2></a>
+
+                         <a href="blog-p3-rad.html"><h2 class>Radiators</h2></a>
                      </header>
                      <p>
                        We all know that an internal combustion engine burns fuel to produce power which spins the wheels in an automobile. But the second law of thermodynamics makes sure that only a part of the energy of the fuel can be converted to useful power. The rest converts to heat,
                         some of which leaves the engine through the exhaust, while some of it tends to remain and heat the parts in proximity......
                      </p>
-                     <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap"><br>
-                         <div class="title"><span>Writer</span></div></a> &nbsp;|&nbsp; <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                     <footer class="post-footer d-flex align-items-center"><br>
+                         <div class="title"><div class="date"><i class="icon-clock"></i> 2 months ago</div>
                      </footer>
                    </div>
                  </div>
@@ -226,7 +205,7 @@ cars.</p>
       <br> -->
       Find Us on Google Maps &emsp;<a href="https://www.google.co.in/maps/place/TeamKART+Bay/@22.3202989,87.3142503,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1d441bd5dd36ff:0xe6a8debfe052c0aa!8m2!3d22.320294!4d87.316439" target="_blank"><i id="sm" class="fa fa-map-marker" style="font-size:24px;color:white;"></i></a>
       <hr style="color:white;">
-      TEAM KART<br>
+      TeamKART<br>
       Indian Institute of Technology<br>
       Kharagpur - 721302
     </div>
@@ -234,7 +213,6 @@ cars.</p>
       <img src="images/iit_logo2.png" width="150px" alt=""><br>
       <a href="https://www.facebook.com/TeamKART/?ref=br_rs" target="_blank"><i id="sm" class="fa fa-facebook-square" style="font-size:24px;color:white;"></i></a>&emsp;
       <a href="https://www.instagram.com/team.kart/" target="_blank"><i id="sm" class="fa fa-instagram" style="font-size:24px;color:white;"></i></a>&emsp;
-      <a href=""><i id="sm" class="fa fa-twitter" style="font-size:24px;color:white;"></i></a>&emsp;
       <a href="https://www.youtube.com/channel/UCvHSedfK-dS5wtvZphz8uow" target="_blank"><i id="sm" class="fa fa-youtube-play" style="font-size:24px;color:white;"></i></a>&emsp;<br><br>
     </div>
     <div class="col-md-4 ml-auto text-sm-center text-md-right pr-5">

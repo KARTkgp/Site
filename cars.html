@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"-->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,19 +19,7 @@
     <title>Cars</title>
     <link rel="shortcut icon" href="images/k.ico"/>
     <style type="text/css">
-      .collapse{
-       justify-content: flex-end;
-      }
-      .navbar-toggler {
-    background-color: red !important
-}
-      #nav-text:hover{
-        color: red;
-        transition: 1s ease;
-      }
-      .nav-link{
-        margin-right: 1em !important;
-      }
+
       #c1:hover{
         transform: scale(1.2);
         margin: 5px;
@@ -39,13 +28,15 @@
         background:url(./images/bg2x.jpg);
         background-attachment:fixed;
         -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;
-        background-size:cover;
+        background-size:auto;
         background-repeat:no-repeat;
         background-position:center center;
-        padding: 50px;
+        padding: 50px;}
+        @media (max-width: @768px) {
+          #content{background-attachment: scroll;
+        }
       }
       #car{
-
         padding: 15px;
       }
       #im-tr {
@@ -80,25 +71,13 @@
         font-size: 16px;
         padding: 16px 32px;
       }
-      #cont{
-        padding-top: 0px;
-        margin-top: 0px;
-        background-color:#1e1c1c;
-
-      }
       @media only screen and (max-width: 768px) {
-        .navbar .navbar-collapse {
-            border-color: black;
-            background-color: black;
-         }
          .navbar{background: black;}
          #middle{
            left: 50%;
          }
      }
-      #contin{
-        width: 300px;
-      }
+
       .d-block w-100{
         height: 400px;
       }
@@ -114,6 +93,9 @@
 
       @media (min-height: 800px) {
         .modal-body { height: 600px; }
+        }
+        #cont{
+          margin-top: 0;
         }
     </style>
   </head>
@@ -168,7 +150,7 @@
 
         <!-- <div class="row justify-content-md-center view overlay">
           <div id="c1" class="col-md-4 justify-content-md-center">
-            <img id="im-tr" class="img-responsive" src="images/cars/k4.jpg" width="450px" alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/k4.jpg" width="450px" alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K4">K4</button>
             </div>
@@ -183,13 +165,13 @@
 
         <div class="row justify-content-md-center view overlay pl-5" >
           <div id="c1" class="col-md-5 justify-content-md-center">
-            <img id="im-tr" class="img-responsive" src="images/cars/k4.jpg" width="370px" height="280px" alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/k4.jpg" width="370px" height="280px" alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K4">K4</button>
             </div>
           </div>
           <div id="c1" class="col-md-5 ">
-            <img id="im-tr" class="img-responsive" src="images/cars/k3.jpg" width="370px" height="280px" alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/k3.jpg" width="370px" height="280px" alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K3">K3</button>
             </div>
@@ -198,13 +180,13 @@
 
         <div class="row justify-content-md-center view overlay pl-5">
           <div id="c1" class="col-md-5 justify-content-md-center ">
-            <img id="im-tr" class="img-responsive" src="images/cars/k2.2.jpg" width="370px" height="280px" alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/k2.2.jpg" width="370px" height="280px" alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K22">K2.2</button>
             </div>
           </div>
           <div id="c1" class="col-md-5 ">
-            <img id="im-tr" class="img-responsive" src="images/cars/K2.jpg" width="370px" height="280px"  alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/K2.jpg" width="370px" height="280px"  alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K2">K2</button>
             </div>
@@ -213,13 +195,13 @@
 
           <div class="row justify-content-md-center view overlay pl-5">
           <div id="c1" class="col-md-5 ">
-            <img id="im-tr" class="img-responsive" src="images/cars/k1.jpg"  width="370px" height="280px"alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/k1.jpg"  width="370px" height="280px"alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#K1">K1</button>
             </div>
           </div>
           <div id="c1" class="col-md-5 ">
-            <img id="im-tr" class="img-responsive" src="images/cars/kx1.jpg" width="370px" height="280px" alt="">
+            <img id="im-tr" class="img-responsive img-fluid" src="images/cars/kx1.jpg" width="370px" height="280px" alt="">
             <div id="middle">
               <button type="button" class="btn btn-primary" id="text" data-toggle="modal" data-target="#KX1">KX-1</button>
             </div>
@@ -234,7 +216,7 @@
             <br> -->
             Find Us on Google Maps &emsp;<a href="https://www.google.co.in/maps/place/TeamKART+Bay/@22.3202989,87.3142503,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1d441bd5dd36ff:0xe6a8debfe052c0aa!8m2!3d22.320294!4d87.316439" target="_blank"><i id="sm" class="fa fa-map-marker" style="font-size:24px;color:white;"></i></a>
             <hr style="color:white;">
-            TEAM KART<br>
+            TeamKART<br>
             Indian Institute of Technology<br>
             Kharagpur - 721302
           </div>
@@ -242,7 +224,6 @@
             <img src="images/iit_logo2.png" width="150px" alt=""><br>
             <a href="https://www.facebook.com/TeamKART/?ref=br_rs" target="_blank"><i id="sm" class="fa fa-facebook-square" style="font-size:24px;color:white;"></i></a>&emsp;
             <a href="https://www.instagram.com/team.kart/" target="_blank"><i id="sm" class="fa fa-instagram" style="font-size:24px;color:white;"></i></a>&emsp;
-            <a href=""><i id="sm" class="fa fa-twitter" style="font-size:24px;color:white;"></i></a>&emsp;
             <a href="https://www.youtube.com/channel/UCvHSedfK-dS5wtvZphz8uow" target="_blank"><i id="sm" class="fa fa-youtube-play" style="font-size:24px;color:white;"></i></a>&emsp;<br><br>
           </div>
           <div class="col-md-4 ml-auto text-sm-center text-md-right pr-5">
@@ -285,6 +266,7 @@
         </button>
       </div>
       <div class="modal-body">
+        <p>Participated in Formula Bharat 2017</p>
         <strong>Spec Sheet:</strong><br>
         General<ul>
         <li>Overall Length: 2980mm
@@ -330,6 +312,7 @@
         </button>
       </div>
       <div class="modal-body">
+        <p>Participated in Formula Design Challenge 2015</p>
         <strong>Spec Sheet:</strong><br>
         General<ul>
         <li>Overall Length: 2730mm
@@ -375,6 +358,7 @@
         </button>
       </div>
       <div class="modal-body">
+        <p>Participated at Formula Student, UK 2013</p>
         <strong>Spec Sheet:</strong><br>
         General<ul>
         <li>Overall Length: 2730mm</li>
@@ -420,6 +404,7 @@
         </button>
       </div>
       <div class="modal-body">
+        <p> Participated at Formula Student, UK 2011</p>
         <strong>Spec Sheet:</strong><br>
         General<ul>
         <li>Overall Length: 2400mm
@@ -500,7 +485,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Spec Sheet:
+        Participated at Formula Student, UK 2010.
       </div>
     </div>
   </div>
